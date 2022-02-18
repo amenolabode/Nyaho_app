@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:nyaho/Main_page.dart';
+import 'package:nyaho/DoctorList_Page.dart';
+import 'package:nyaho/Home.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +15,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           // primarySwatch: Colors.blue,
           ),
-      home: const MyHomePage(),
+      home: const LandingPage(),
+      // routes: {
+      //   '/home': (context) => const LandingPage(),
+      //   '/doctorlist': (context) => DoctorListPage(),
+      // },
     );
   }
 }
