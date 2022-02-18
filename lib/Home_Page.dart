@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:nyaho/Card_home.dart';
-import 'package:nyaho/Button_Outlined.dart';
+import 'package:nyaho/Components/Card_home.dart';
+import 'package:nyaho/Components/Button_Outlined.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
@@ -69,12 +69,13 @@ class _MyHomePageState extends State<MyHomePage> {
                     bottom: 24,
                   ),
                   child: Text(
-                    "What do you want \n to do today?",
+                    "What do you want \n to do this morning?",
                     style: TextStyle(
                         color: Color(0xff222B45),
-                        fontSize: 28,
+                        fontSize: 24,
                         fontFamily: "Poppins",
-                        fontWeight: FontWeight.w600),
+                        letterSpacing: 0.3,
+                        fontWeight: FontWeight.w700),
                   ),
                 ),
                 Row(
