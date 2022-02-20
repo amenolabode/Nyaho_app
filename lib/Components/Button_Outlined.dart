@@ -47,7 +47,7 @@ class ButtonOutlined extends StatelessWidget {
                       Text(
                         buttonText,
                         style: const TextStyle(
-                            color: Color(0xff23374D),
+                            color: Colors.black87,
                             fontSize: 16,
                             fontFamily: "Poppins",
                             fontWeight: FontWeight.w600),
@@ -71,7 +71,7 @@ class ButtonOutlined extends StatelessWidget {
                     Radius.circular(8),
                   ),
                   child: Container(
-                    color: const Color(0xff3E64FF),
+                    color: Colors.black87,
                     height: 32,
                     width: 32,
                     child: const Icon(

@@ -24,7 +24,7 @@ class SquareCard extends StatelessWidget {
         children: [
           Container(
             decoration: const BoxDecoration(
-              color: Color(0xff3E64FF),
+              color: Colors.black87,
               borderRadius: BorderRadius.all(
                 Radius.circular(8),
               ),
