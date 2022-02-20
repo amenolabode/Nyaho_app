@@ -27,7 +27,10 @@ class VerticalSliderCard extends StatelessWidget {
           Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage(cardBackgroundImage), fit: BoxFit.cover),
+                  image: AssetImage(cardBackgroundImage),
+                  colorFilter: ColorFilter.mode(
+                      Colors.black.withOpacity(0.5), BlendMode.multiply),
+                  fit: BoxFit.cover),
               borderRadius: const BorderRadius.all(
                 Radius.circular(8),
               ),
@@ -46,14 +49,15 @@ class VerticalSliderCard extends StatelessWidget {
                         // textAlign: TextAlign.center,
                         style: const TextStyle(
                             fontFamily: "Poppins",
-                            fontSize: 10,
-                            fontWeight: FontWeight.w300),
+                            fontSize: 12,
+                            color: Colors.white,
+                            fontWeight: FontWeight.w500),
                       ),
                     ),
                     height: 22,
                     width: 56,
                     decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(0.6),
+                        color: Colors.white.withOpacity(0.2),
                         border: Border.all(
                             color: Colors.white, // set border color
                             width: 1.0),
@@ -86,7 +90,7 @@ class VerticalSliderCard extends StatelessWidget {
                         child: Text(
                           date,
                           style: const TextStyle(
-                            fontSize: 12,
+                            fontSize: 10,
                             fontFamily: "Poppins",
                             color: Colors.white70,
                             fontWeight: FontWeight.w400,

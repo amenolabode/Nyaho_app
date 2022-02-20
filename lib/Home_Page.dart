@@ -51,7 +51,7 @@ class MyHomePage extends StatelessWidget {
                   ),
                   VerticalSliderCard(
                     textData: "Neurology",
-                    cardBackgroundImage: "images/cont-bg.jpg",
+                    cardBackgroundImage: "images/cont-bg2.jpg",
                     date: "26/12/2022",
                     priceTag: "#12000",
                   ),
