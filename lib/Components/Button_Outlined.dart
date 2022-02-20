@@ -13,9 +13,9 @@ class ButtonOutlined extends StatelessWidget {
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
     return Container(
-      margin: const EdgeInsets.only(top: 12, bottom: 12),
+      margin: EdgeInsets.only(top: 8, bottom: 8),
       width: width * 0.9,
-      height: 72,
+      height: height * 0.08,
       child: Stack(
         children: [
           //background
@@ -33,28 +33,31 @@ class ButtonOutlined extends StatelessWidget {
           ),
           //Text and Button
           Row(
+            //mainAxisAlignment: MainAxisAlignment.center,
+            //crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               //Text
               Expanded(
-                flex: 2,
                 child: Padding(
-                  padding: const EdgeInsets.all(16.0),
+                  padding: const EdgeInsets.only(left: 16.0),
                   child: Column(
-                    // mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
                         buttonText,
                         style: const TextStyle(
                             color: Color(0xff23374D),
                             fontSize: 16,
+                            fontFamily: "Poppins",
                             fontWeight: FontWeight.w600),
                       ),
                       Text(
                         buttonSubText,
                         style: const TextStyle(
                             color: Color(0xff96979A),
-                            fontSize: 13,
+                            fontSize: 12,
+                            fontFamily: "Poppins",
                             fontWeight: FontWeight.w400),
                       ),
                     ],
@@ -62,15 +65,15 @@ class ButtonOutlined extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(right: 16.0),
+                padding: const EdgeInsets.all(16.0),
                 child: ClipRRect(
                   borderRadius: const BorderRadius.all(
                     Radius.circular(8),
                   ),
                   child: Container(
                     color: const Color(0xff3E64FF),
-                    height: 44,
-                    width: 44,
+                    height: 32,
+                    width: 32,
                     child: const Icon(
                       Icons.chevron_right,
                       color: Colors.white,

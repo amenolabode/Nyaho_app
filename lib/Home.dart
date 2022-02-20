@@ -1,6 +1,6 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:nyaho/Components/Card_home.dart';
+import 'package:nyaho/Components/Home_square_card.dart';
 import 'package:nyaho/Home_Page.dart';
 
 class LandingPage extends StatefulWidget {
@@ -37,6 +37,7 @@ class _LandingPageState extends State<LandingPage> {
             "Hello Amen",
             style: TextStyle(
                 color: Color(0xff222B45),
+                fontFamily: "Poppins",
                 fontSize: 16,
                 fontWeight: FontWeight.w600),
           ),
@@ -74,24 +75,29 @@ class _LandingPageState extends State<LandingPage> {
           ),
         ),
         child: NavigationBar(
+          labelBehavior: NavigationDestinationLabelBehavior.alwaysHide,
           backgroundColor: const Color(0xffF1F4FF),
           selectedIndex: index,
           onDestinationSelected: (index) => setState(() => this.index = index),
           destinations: const [
             NavigationDestination(
-              icon: Icon(Icons.home),
+              icon: Icon(Icons.home_outlined),
+              selectedIcon: Icon(Icons.home),
               label: "Home",
             ),
             NavigationDestination(
-              icon: Icon(Icons.search),
+              icon: Icon(Icons.search_outlined),
+              selectedIcon: Icon(Icons.search),
               label: "Search",
             ),
             NavigationDestination(
-              icon: Icon(Icons.calendar_today),
+              icon: Icon(Icons.calendar_today_outlined),
+              selectedIcon: Icon(Icons.calendar_today),
               label: "Calendar",
             ),
             NavigationDestination(
-              icon: Icon(Icons.person),
+              icon: Icon(Icons.person_outline),
+              selectedIcon: Icon(Icons.person),
               label: "Profile",
             )
           ],
